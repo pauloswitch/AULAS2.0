@@ -1,0 +1,25 @@
+//exercicio 1
+/*
+fun main() {
+   var n1 = 758
+   var n2 = 7
+    if(n1 > n2){
+               println("numero n1 $n1 e maior que o numero n2 $n2")
+    }else{
+          println("numero n2 $n2 e maior que o numero n2 $n1")
+}
+
+}
+*/
+//exercicio 2
+/*
+fun main() {
+    var n3 = 0 
+    if( n3 > -1){
+                println(" numero n3 $n3 ele é positivo ")
+    }else{ 
+          println(" numero n3 $n3 ele é negativo ")    
+    }
+    
+}
+*/
