@@ -1,1 +1,66 @@
 
+fun main() {
+     var usuario = ContaBanco(-100.0, 1456156754784564156, 5018)
+    usuario.consultarSaldo(5018)
+    usuario.deposito(5018,1200.0)
+    usuario.consultarSaldo(5018)
+    usuario.saque(5018,1500.0)
+    usuario.consultarSaldo(5018)
+}
+class ContaBanco(var saldo: Double, var numeroConta: Long, var senhaCorreta: Int){ 
+    
+    fun consultarSaldo(senha: Int){
+        
+        if(senha == senhaCorreta){
+            println("Saldo: R$$saldo")
+        }else{
+            println("Senha Incorreta")
+        }
+        
+    }
+    
+    fun deposito(senha: Int, valor: Double){
+    
+     if(senha == senhaCorreta){
+         if(valor <= 0){
+             println("depisoto de r$$valor não possivel de realizar")
+         }else{
+              saldo += valor 
+            println("depisoto de r$$valor realizado com secess")
+             
+         }
+
+        }else{
+            println("Senha Incorreta")
+        }
+        
+    }
+     fun saque(senha: Int, valor: Double){
+       
+        if(senha == senhaCorreta)
+        {
+         if(valor <= 0){
+             println("saque de r$$valor,r não possivel de realizar")
+         }else if(valor > saldo){
+             println("saque de r$$valor,r não possivel de realizar")
+         }else{
+              saldo -= valor 
+            println("saque de r$$valor realizado com secess")
+             
+         }
+
+        }else{
+            println("Senha Incorreta")
+        }
+         
+         
+         
+     }
+     
+    
+}
+    
+    
+    
+
+
